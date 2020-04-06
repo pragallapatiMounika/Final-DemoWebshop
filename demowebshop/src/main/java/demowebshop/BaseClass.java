@@ -4,20 +4,28 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class BaseClass {
 
 	protected WebDriver driver;
-
-	public void LaunchApplication() {
-		// To launch chrome browser
-		System.setProperty("webdriver.chrome.driver", "C://chromedriver_win32//chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
-		
-
-	}
+	
+	// To launch browser
+	public WebDriver launchApplication(String browser){
+		{
+			if(browser.equals("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "\"C:\\chromedriver_win32\\chromedriver.exe\"");
+			driver = new ChromeDriver();
+			}
+			if(browser.equals("firefox")) {
+				System.setProperty("webdriver.chrome.driver", "\"C:\\geckodriver-v0.26.0-win64\\geckodriver.exe\"");
+				driver = new FirefoxDriver();
+			}
+			driver.manage().window().maximize();
+			return driver;
+		}
+		}
+	// To launch  Website
 
 	public void OpenWebsite() {
 		driver.get("http://demowebshop.tricentis.com");
@@ -27,7 +35,6 @@ public class BaseClass {
 
 	// To close the browser
 	public void quit() {
-
 		driver.close();
 	}
 

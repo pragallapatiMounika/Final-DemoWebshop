@@ -1,0 +1,130 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 40,
+        "name": "Selecting the desired book",
+        "description": "",
+        "id": "login-for-demowebshop;selecting-the-desired-book",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 34238269678,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "User Is On My LoginPage",
+            "match": {
+              "location": "books_stepdef.user_is_on_my_loginpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3482317698,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "User Fillup uid \u003cusername\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": " \u003cusername\u003e",
+                  "offset": 15
+                }
+              ],
+              "location": "books_stepdef.user_fillup_uid(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 312830027,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "User Fillup pwd \u003cpassword\u003e",
+            "match": {
+              "arguments": [
+                {
+                  "val": " \u003cpassword\u003e",
+                  "offset": 15
+                }
+              ],
+              "location": "books_stepdef.user_fillup_pwd(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11352053129,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "User click LoginButton",
+            "match": {
+              "location": "books_stepdef.user_click_loginbutton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2746544946,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "User clicks the books",
+            "match": {
+              "location": "books_stepdef.user_clicks_the_books()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9182992242,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "Click Computing",
+            "match": {
+              "location": "books_stepdef.click_computing()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2728700035,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "Click CompareList",
+            "match": {
+              "location": "books_stepdef.click_comparelist()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 39,
+            "name": "@tag4"
+          }
+        ]
+      }
+    ],
+    "name": "Login for demoWebShop",
+    "description": "I want to use this template for my feature files",
+    "id": "login-for-demowebshop",
+    "keyword": "Feature",
+    "uri": "demoshop.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@tag"
+      }
+    ]
+  }
+]

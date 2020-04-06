@@ -10,6 +10,9 @@ public class WishList {
 	@FindBy(xpath = "//span[contains(text(),'Wishlist')]")
 	WebElement wishlist;
 
+	
+
+	  
 	public WishList(WebDriver driver) {
 		PageFactory.initElements(driver, this);
 	}

@@ -12,123 +12,114 @@ formatter.feature({
     }
   ]
 });
-formatter.scenarioOutline({
-  "line": 5,
-  "name": "Login To DemoWeb with valid credentials",
+formatter.scenario({
+  "line": 40,
+  "name": "Selecting the desired book",
   "description": "",
-  "id": "login-for-demowebshop;login-to-demoweb-with-valid-credentials",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline",
+  "id": "login-for-demowebshop;selecting-the-desired-book",
+  "type": "scenario",
+  "keyword": "Scenario",
   "tags": [
     {
-      "line": 4,
-      "name": "@tag1"
+      "line": 39,
+      "name": "@tag4"
     }
   ]
 });
 formatter.step({
-  "line": 6,
+  "line": 41,
   "name": "User Is On My LoginPage",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 7,
+  "line": 42,
   "name": "User Fillup uid \u003cusername\u003e",
   "keyword": "When "
 });
 formatter.step({
-  "line": 8,
+  "line": 43,
   "name": "User Fillup pwd \u003cpassword\u003e",
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
+  "line": 44,
   "name": "User click LoginButton",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 11,
-  "name": "",
-  "description": "",
-  "id": "login-for-demowebshop;login-to-demoweb-with-valid-credentials;",
-  "rows": [
-    {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 12,
-      "id": "login-for-demowebshop;login-to-demoweb-with-valid-credentials;;1"
-    },
-    {
-      "cells": [
-        "user1",
-        "userpass"
-      ],
-      "line": 13,
-      "id": "login-for-demowebshop;login-to-demoweb-with-valid-credentials;;2"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 13,
-  "name": "Login To DemoWeb with valid credentials",
-  "description": "",
-  "id": "login-for-demowebshop;login-to-demoweb-with-valid-credentials;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 1,
-      "name": "@tag"
-    },
-    {
-      "line": 4,
-      "name": "@tag1"
-    }
-  ]
-});
-formatter.step({
-  "line": 6,
-  "name": "User Is On My LoginPage",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "User Fillup uid user1",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "User Fillup pwd userpass",
-  "matchedColumns": [
-    1
-  ],
   "keyword": "And "
 });
 formatter.step({
-  "line": 9,
-  "name": "User click LoginButton",
+  "line": 45,
+  "name": "User clicks the books",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 46,
+  "name": "Click Computing",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 47,
+  "name": "Click CompareList",
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "books_stepdef.user_is_on_my_loginpage()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 34238269678,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "arguments": [
+    {
+      "val": " \u003cusername\u003e",
+      "offset": 15
+    }
+  ],
+  "location": "books_stepdef.user_fillup_uid(String)"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 3482317698,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": " \u003cpassword\u003e",
+      "offset": 15
+    }
+  ],
+  "location": "books_stepdef.user_fillup_pwd(String)"
+});
+formatter.result({
+  "duration": 312830027,
+  "status": "passed"
+});
+formatter.match({
+  "location": "books_stepdef.user_click_loginbutton()"
+});
+formatter.result({
+  "duration": 11352053129,
+  "status": "passed"
+});
+formatter.match({
+  "location": "books_stepdef.user_clicks_the_books()"
+});
+formatter.result({
+  "duration": 2746544946,
+  "status": "passed"
+});
+formatter.match({
+  "location": "books_stepdef.click_computing()"
+});
+formatter.result({
+  "duration": 9182992242,
+  "status": "passed"
+});
+formatter.match({
+  "location": "books_stepdef.click_comparelist()"
+});
+formatter.result({
+  "duration": 2728700035,
+  "status": "passed"
 });
 });

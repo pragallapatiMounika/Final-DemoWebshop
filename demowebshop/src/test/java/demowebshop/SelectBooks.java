@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class SelectBooks {
-	@FindBy(linkText="Books")
+	@FindBy(xpath="//ul[@class='top-menu']//a[contains(text(),'Books')]")
 	WebElement books;
 	@FindBy(linkText="Computing and Internet")
 	WebElement computingandInternet;
@@ -21,14 +21,22 @@ public class SelectBooks {
 		//this.driver = driver;
 	}
 	
+	// Select books Categary
+	
 	public void books()
 	{
 		books.click();
 	}
+	
+	// Selecting the book
+	
 	public void Computing() {
 		computingandInternet.click();
 		
 	}
+	
+	//Add to compare list
+	
 	public void compare() {
 		comparelistBtnElement.click();
 	}

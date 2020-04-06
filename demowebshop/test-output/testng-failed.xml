@@ -5,8 +5,12 @@
     <classes>
       <class name="demowebshop.LoginUi">
         <methods>
+          <include name="Wishlist"/>
           <include name="initDriver"/>
+          <include name="Slect"/>
           <include name="ShoppingCart"/>
+          <include name="Logout"/>
+          <include name="books"/>
         </methods>
       </class> <!-- demowebshop.LoginUi -->
     </classes>

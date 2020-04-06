@@ -13,6 +13,8 @@ public class LogOut {
 		PageFactory.initElements(driver, this);
 		//this.driver = driver;
 	}
+	
+	 // logout
 	public void logout() {
 		logout.click();
 	}

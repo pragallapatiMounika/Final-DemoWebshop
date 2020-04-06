@@ -15,6 +15,7 @@ package demowebshop;
 		SelectBooks selectbooks;
 		WishList wishlist;
 		LogOut logout;
+		
 
 		@BeforeSuite
 		public void initDriver() {
@@ -34,7 +35,7 @@ package demowebshop;
 			logout = new LogOut(driver);
 
 		}
-
+  // Test case 1 Login
 		@Test(priority = 1)
 		public void Login() {
 			login.account();
@@ -42,6 +43,8 @@ package demowebshop;
 			login.Setpassword("password");
 			login.LoginBtnElement();
 		}
+		
+		// Test case 2 select the desired phone and adding to cart
 
 		@Test(priority = 2)
 		public void Slect() {
@@ -50,16 +53,20 @@ package demowebshop;
 			select.ClickSmartphones();
 			select.addtocart();
 		}
+		
+		//  Checking the cart items
 
 		@Test(priority = 4)
 		public void ShoppingCart() throws InterruptedException {
 			shoppingCart.cart(driver);
-			//shoppingCart.gotocart();
+			shoppingCart.gotocart();
 			Thread.sleep(5000);
 			
 			shoppingCart.continueshopping();
 
 		}
+		
+		// Select the required book and adding to comparelist
 
 		@Test(priority = 3)
 		public void books() {
@@ -67,15 +74,21 @@ package demowebshop;
 			selectbooks.Computing();
 			selectbooks.compare();
 		}
+		// Checking the wishlist items
 
 		@Test(priority = 5)
 		public void Wishlist() {
 			wishlist.wishlist();
 		}
+		
+		// Logging Out
+		
 		@Test(priority=6)
 		public void Logout(){
 			logout.logout();
 		}
+		
+		
 
 	}
 
